@@ -66,7 +66,7 @@ function App() {
       <footer className="bg-gray-900 text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-lg mb-4">Start your financial journey today with WealthWizard</p>
-          <p className="text-gray-400">© 2024 WealthWizard. All rights reserved.<br> saranshchaudhary1130@gmail.com </br><br> shatakshisharma611gmail.com</br></p>
+          <p className="text-gray-400">© 2024 WealthWizard. All rights reserved.</p>
         </div>
       </footer>
     </div>
