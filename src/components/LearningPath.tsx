@@ -7,7 +7,8 @@ const modules = [
     icon: <BookOpen className="w-6 h-6" />,
     title: "Financial Basics",
     description: "Learn the fundamentals of money management and financial planning",
-    color: "from-blue-500 to-blue-600"
+    color: "from-blue-500 to-blue-600",
+    link: "/learning_mods/financial literacy/module1.html" // Add the link for the module
   },
   {
     icon: <PiggyBank className="w-6 h-6" />,
@@ -57,6 +58,12 @@ const item = {
 };
 
 export default function LearningPath() {
+  const handleModuleClick = (link: string | undefined) => {
+    if (link) {
+      window.open(link, "_blank"); // Opens the webpage in a new tab
+    }
+  };
+
   return (
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -86,6 +93,7 @@ export default function LearningPath() {
               key={index}
               variants={item}
               className="group cursor-pointer"
+              onClick={() => handleModuleClick(module.link)} // Add onClick handler
             >
               <div className={`relative overflow-hidden rounded-xl bg-gradient-to-br ${module.color} p-8 shadow-lg transform transition-all duration-300 group-hover:scale-[1.02]`}>
                 <div className="absolute right-0 top-0 -mt-4 -mr-4 h-16 w-16 rounded-full bg-white/20 blur-2xl" />
