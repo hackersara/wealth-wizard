@@ -9,6 +9,7 @@ const modules = [
     description: "Learn the fundamentals of money management and financial planning",
     color: "from-blue-500 to-blue-600",
     link: "/learning_mods/financial literacy/module1.html" // Add the link for the module
+    link: "https://wizard-modules.netlify.app" // Add the link for the module
   },
   {
     icon: <PiggyBank className="w-6 h-6" />,
