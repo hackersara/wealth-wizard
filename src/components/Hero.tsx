@@ -20,9 +20,11 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-wrap justify-center gap-4">
+          <a href="https://wizard-modules.netlify.app/" target="_blank" rel="noopener noreferrer">
             <button className="px-8 py-4 bg-white text-indigo-600 rounded-full font-semibold hover:bg-yellow-400 hover:text-white transition-all transform hover:scale-105">
               Start Learning Now
             </button>
+            </a>
             <button className="px-8 py-4 border-2 border-white text-white rounded-full font-semibold hover:bg-white hover:text-indigo-600 transition-all">
               Try Our Calculators
             </button>
